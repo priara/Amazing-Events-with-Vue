@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../style/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <title>Amazing events</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-light d-flex col-12 col-lg-12 bg-dark ">
+        <div class="container-fluid d-flex justify-content-center col-11 col-lg-12 ">
+            <a class="navbar-brand d-flex justify-content-center " href="#">
+                <img class="imglogo " src="../images/amazing_brand.png" alt="logo">
+            </a>
+            <div class="col-12 col-lg-1">
+                <button class="navbar-toggler border-white" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon btn btn-light border-white "></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-2 ">
+                    <li class="nav-item">
+                        <a class="nav-link active text-white border border-white rounded" aria-current="page"
+                            href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white border border-white rounded"
+                            href="../pages/upcomingEvents.html">Upcoming
+                            Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white border border-white rounded" href="../pages/pastEvents.html">Past
+                            Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white border border-white rounded"
+                            href="../pages/contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white border border-white rounded" href="../pages/stats.html">Stats</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="app">
+
+        <main id="main-details ">
+
+            <template v-if="cadaEvento" > 
+
+                <section class="container p-3 d-flex justify-content-center align-items-center " id="contenedor">
+                    <div class="detailscard p-2 rounded h-50 w-sm-25 ">
+                        <div class="row g-0 ">
+                        <div class="col-md-4">
+                        <img v-bind:src="cadaEvento.image" class="img-fluid rounded-start object-fit-cover h-100 w-100" alt="...">
+                        </div>
+                        <div class="col-md-8 col-12 ">
+                        <div class="card-bodydetails ps-3 ">
+                        <h4 class="card-title fw-bold text-center">{{cadaEvento.name}}</h4>
+                        <h6 class="card-text">{{cadaEvento.description}}</h6>
+                        <p class="card-text"><small class="">{{cadaEvento.date}}</p>
+                        <p class="card-text">Place: {{cadaEvento.place}}</p>
+                        <p class="card-text"> Price: {{cadaEvento.price}} USD</p>
+                        <p class="card-text">Capacity: {{cadaEvento.capacity}}</p>
+                        </div>
+                        </div>
+                        </div>
+                        </div>
+                </section>
+
+            </template>
+            
+        </main>
+    </div>
+    <footer class="col-12">
+        <div
+            class="d-flex flex-column align-items-center col-12 d-md-flex d-md-flex flex-md-row justify-content-md-around">
+            <div class="d-flex justify-content-center gap-2">
+                <img class="col-1" src="../images/facebook.png" alt="facebook">
+                <img class="col-1" src="../images/instagram.png" alt="instagram">
+                <img class="col-1" src="../images/whatsapp.png" alt="whatsapp">
+            </div>
+            <p class="text-white">COHORT 49</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="../details.js"></script>
+</body>
+
+</html>

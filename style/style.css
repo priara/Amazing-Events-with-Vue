@@ -1,0 +1,105 @@
+.imglens{
+    height: 1.7rem;
+    object-fit: contain;
+}
+.carousel-item{
+    max-height: 700px;
+}
+.c-item{
+    height: 450px;
+}
+.c-img{
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.6);
+}
+section{
+    min-height: 65vh;
+    background-color: #DDC8C4;
+    
+}
+.imglogo{
+    width: 10rem;
+}
+main{
+    display: flex;
+    flex-wrap: wrap!important;
+}
+
+table, th, tr, td{
+    border: 1px solid black!important;
+    border-collapse: collapse;  
+    margin-bottom: 0!important;
+}
+
+#tablamayor{
+    background-color: #FFD1BA!important;
+}
+#tablamenor{
+    background-color: #FFD1BA!important;
+}
+#tablalargo{
+    background-color: #FFD1BA!important;
+}
+.tablas{
+    background-color: #CE7DA5!important;
+}
+.tabla2y3{
+    background-color: #FFD1BA!important;
+}
+th{
+    background-color: #493657!important;
+}
+tr,td{
+    text-align: center;
+    background-color: #FFD1BA!important;
+}
+.categories{
+    background-color: #896a6798;
+}
+main{
+    background-color: #DDC8C4;
+    min-height: 83.8vh;
+}
+footer{
+    background-color: #13070C;
+}
+.fondodiv{
+    background-color: #896A67!important;
+}
+body{
+    background-color: #896A67;
+}
+#exampleFormControlTextarea1{
+    resize: none;
+}
+.btn{
+    border-color: black!important;
+}
+#botondetails{
+    background-color: #574240;
+}
+*{
+    font-family: 'Lora', serif;
+}
+
+.card{
+    height: 26rem!important;
+    width: 20rem!important;
+    background-color: #896A67!important;
+}
+.card-img-top{
+    height: 10rem!important;
+}
+.card-body{
+    background-color: #896A67;
+}
+.card-body-details{
+    background-color: #896A67;
+}
+#main-details{
+    min-height: 83.8vh;
+}
+.detailscard{
+    background-color: #896A67;
+}
